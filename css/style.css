@@ -31,6 +31,9 @@ body
 	margin: 0px;
 	padding: 0px;
 }
+:root{
+  --primary-color: #800000cf
+}
 body {
 	background: #FFF;
 	height: 100%;
@@ -135,9 +138,9 @@ section {
 			BUTTON
 ========================================================*/
 .btn {
-	background: #ecc731;
+	background: var(--primary-color);
 	text-transform: uppercase;
-	color: #232323;
+	color: white !important;
 	border-radius: 0px;
 	display: inline-block;
 	padding: 10px 30px;
@@ -237,7 +240,7 @@ section {
 			TITTLE
 ========================================================*/
 hr {
-	background: #ecc731;
+	background: var(--primary-color);
 	height: 4px;
 	width: 110px;
 }
@@ -354,7 +357,7 @@ header nav {
 	position: relative;
 	z-index: 999;
 	min-height: 60px;
-	background: #ecc731;
+	background: var(--primary-color);
 }
 header nav:before {
 	height: 1px;
@@ -371,6 +374,7 @@ header nav:before {
 	border-color: transparent;
 	text-decoration: none;
 	display: inline-block;
+	color: white;
 }
 header nav li a {
 	line-height: 20px;
@@ -520,17 +524,17 @@ header .btn-right {
 	float: right;
 }
 header .btn-right .btn {
-	background: #303030;
+	/* background: #303030; */
 	margin-top: 35px;
 	color: #fff;
 }
 header .btn-right i {
-	color: #ecc731;
+	color: var(--primary-color);
 	margin-right: 10px;
 	transition: all 0.4s ease-in-out;
 }
 header .btn-right .btn:hover {
-	background: #ecc731;
+	background: var(--primary-color);
 	color: #303030;
 }
 header .btn-right .btn:hover i {
@@ -583,7 +587,7 @@ header .btn-right .btn:hover i {
 }
 .bnr-txt hr {
 	height: 4px;
-	background: #ecc731;
+	background: var(--primary-color);
 	width: 80px;
 	border: none;
 	margin: 20px 0;
@@ -603,14 +607,14 @@ header .btn-right .btn:hover i {
 	margin-left: 10px;
 }
 .bnr-txt .btn:hover {
-	background: #ecc731;
-	border-color: #ecc731;
+	background: var(--primary-color);
+	border-color: var(--primary-color);
 }
 .white-bg {
 	background: #fff;
 }
 .bnr-txt-2 h3 {
-	color: #ecc731;
+	color: var(--primary-color);
 	font-weight: bold;
 	font-style: italic;
 }
@@ -630,7 +634,7 @@ header .btn-right .btn:hover i {
 	border: none;
 }
 .bnr-txt-2 .btn i {
-	background: #ecc731;
+	background: var(--primary-color);
 	color: #fff;
 	float: right;
 	display: inline-block;
@@ -669,7 +673,7 @@ header .btn-right .btn:hover i {
 	margin: 0px;
 }
 .sub-banner h3 span {
-	color: #ecc731;
+	color: var(--primary-color);
 }
 .sub-banner .breadcrumb {
 	background: none;
@@ -712,7 +716,7 @@ header .btn-right .btn:hover i {
 .process p i {
 	margin-right: 15px;
 	font-size: 26px;
-	color: #ecc731;
+	color: var(--primary-color);
 	display: inline-block;
 }
 .process .num {
@@ -729,7 +733,7 @@ header .btn-right .btn:hover i {
 .up-com-event {
 	background: #ffffff;
 	padding: 30px;
-	border-bottom: 2px solid #ecc731;
+	border-bottom: 2px solid var(--primary-color);
 	margin-top: -25px;
 	position: relative;
 	z-index: 99;
@@ -817,7 +821,7 @@ header .btn-right .btn:hover i {
 	margin-right:10px;
 }
 .donate-price .tabii-price li.active a{
-	color:#ecc731;
+	color:var(--primary-color);
 }
 .donate-price .tabii-price a{
 	color:#232323;
@@ -841,7 +845,7 @@ header .btn-right .btn:hover i {
 .countdown span{
 	font-size:22px;
 	font-family: 'Lora', serif;
-	background:#e5c12f;
+	background:var(--primary-color);
 	display:inline-block;
 	text-align:center;
 	width:60px;
@@ -914,7 +918,7 @@ header .btn-right .btn:hover i {
 	box-shadow: none;
 }
 .progress-bar {
-	background-color: #ecc731;
+	background-color: var(--primary-color);
 	box-shadow: none;
 }
 .progress-bar-tooltip {
@@ -929,7 +933,7 @@ header .btn-right .btn:hover i {
 	color: #232323;
 	font-size: 12px;
 	font-weight: bold;
-	border: 2px solid #ecc731;
+	border: 2px solid var(--primary-color);
 }
 .cases-pages {
 	padding-top: 0px;
@@ -959,7 +963,7 @@ header .btn-right .btn:hover i {
 }
 .cases-pages .filter li a.active {
 	color: #3e3e3e;
-	border-bottom: 2px solid #ecc731;
+	border-bottom: 2px solid var(--primary-color);
 }
 .cases-pages .filter-bar {
 	background: #ffffff;
@@ -1036,11 +1040,11 @@ header .btn-right .btn:hover i {
 	background: none;
 }
 .pagination li.active {
-	border-bottom: 2px solid #ecc731;
+	border-bottom: 2px solid var(--primary-color);
 }
 .pagination li.active a {
-	color: #ecc731;
-	border-bottom: 2px solid #ecc731;
+	color: var(--primary-color);
+	border-bottom: 2px solid var(--primary-color);
 }
 .pager li a span {
 	margin: 0 10px;
@@ -1278,17 +1282,17 @@ header .btn-right .btn:hover i {
 }
 #counters li i {
 	font-size: 40px;
-	color: #ecc731;
+	color: var(--primary-color);
 	margin-right: 20px;
 	margin-top: 10px;
-	border-bottom: 1px solid #ecc731;
+	border-bottom: 1px solid var(--primary-color);
 	padding-bottom: 20px;
 }
 #counters li span {
 	font-size: 35px;
 	font-weight: bold;
 	font-family: 'Lora', serif;
-	color: #ecc731;
+	color: var(--primary-color);
 }
 #counters li p {
 	font-family: 'Lora', serif;
@@ -1334,7 +1338,7 @@ header .btn-right .btn:hover i {
 	border-bottom: 3px solid #e5e5e5;
 }
 .donatores li .donor-details span strong {
-	color: #ecc731;
+	color: var(--primary-color);
 }
 .donatores li.become-donor .donor-details {
 	padding: 20px 30px;
@@ -1389,7 +1393,7 @@ header .btn-right .btn:hover i {
 	color: #c1c1c1;
 }
 .products-details .rated {
-	color: #ecc731;
+	color: var(--primary-color);
 }
 .products-details .add-cart {
 	display: inline-block;
@@ -1405,7 +1409,7 @@ header .btn-right .btn:hover i {
 	font-weight: bold;
 }
 .products-details .add-cart:hover {
-	border-color: #ecc731;
+	border-color: var(--primary-color);
 }
 .shop-side-bar {
 	background: #fff;
@@ -1462,7 +1466,7 @@ header .btn-right .btn:hover i {
 	color: #000;
 }
 .shop-pages .top-rated p {
-	color: #ecc731;
+	color: var(--primary-color);
 	margin-top: 5px;
 	font-size: 14px;
 	font-weight: bold;
@@ -1482,7 +1486,7 @@ header .btn-right .btn:hover i {
 	border-bottom: 1px solid #e8e8e8;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
-	color: #ecc731;
+	color: var(--primary-color);
 	margin-top: 10px;
 }
 .item-info .price span {
@@ -1500,7 +1504,7 @@ header .btn-right .btn:hover i {
 	margin-top: 5px;
 }
 .item-info .stars h5 span {
-	color: #ecc731;
+	color: var(--primary-color);
 }
 .item-info .add-cart {
 	margin-top: 20px;
@@ -1551,12 +1555,12 @@ header .btn-right .btn:hover i {
 	border: none;
 	margin: 0px;
 	border: none;
-	border-top: 4px solid #ecc731;
+	border-top: 4px solid var(--primary-color);
 	border-color: transparent;
 	border-left: 1px solid #eeeeee;
 }
 .item-info .nav-tabs li.active {
-	border-top: 4px solid #ecc731;
+	border-top: 4px solid var(--primary-color);
 	border-left: 1px solid #eeeeee;
 }
 .item-info .tab-content {
@@ -1744,7 +1748,7 @@ header .btn-right .btn:hover i {
 	padding: 5px 10px;
 }
 .cart-products .remove:hover {
-	background: #ecc731;
+	background: var(--primary-color);
 	color: #fff;
 }
 .coupon input {
@@ -1760,10 +1764,10 @@ header .btn-right .btn:hover i {
 }
 .coupon .btn {
 	background: #fff;
-	border: 2px solid #ecc731;
+	border: 2px solid var(--primary-color);
 }
 .coupon .btn:hover {
-	background: #ecc731;
+	background: var(--primary-color);
 }
 .total-cart .inner {
 	background: #fff;
@@ -1799,10 +1803,10 @@ header .btn-right .btn:hover i {
 }
 .total-cart .btn-1 {
 	background: #fff;
-	border: 2px solid #ecc731;
+	border: 2px solid var(--primary-color);
 }
 .total-cart .btn-1:hover {
-	background: #ecc731;
+	background: var(--primary-color);
 }
 .billing-info {
 }
@@ -1823,7 +1827,7 @@ header .btn-right .btn:hover i {
 	font-weight: bold;
 }
 .billing-info label span.yelo {
-	color: #ecc731;
+	color: var(--primary-color);
 	font-size: 16px;
 }
 .billing-info .bootstrap-select > .btn {
@@ -1838,7 +1842,7 @@ header .btn-right .btn:hover i {
 	content: "\f0d7";
 	font-family: 'FontAwesome';
 	display: inline-block;
-	background: #ecc731;
+	background: var(--primary-color);
 	height: 39px;
 	width: 40px;
 	color: #fff;
@@ -1949,12 +1953,12 @@ header .btn-right .btn:hover i {
 	margin-bottom: 20px;
 }
 .call-out h2 span {
-	color: #ecc731;
+	color: var(--primary-color);
 	font-weight: bold;
 }
 .call-out .btn {
 	font-size: 12px;
-	border: 2px solid #ecc731;
+	border: 2px solid var(--primary-color);
 	margin-top: 30px;
 	margin-left: 20px;
 }
@@ -2116,11 +2120,11 @@ header .btn-right .btn:hover i {
 	line-height: 30px;
 }
 .form-control:focus{
-	border:1px solid #ecc731 !important;
+	border:1px solid var(--primary-color) !important;
 }
 
 .contact-us .contact-info .icon{
-	background:#ecc731;
+	background:var(--primary-color);
 	text-align:center;
 	width:42px;
 	height:42px;
@@ -2183,7 +2187,7 @@ header .btn-right .btn:hover i {
 	padding:0 20%;	
 }
 .error-text .search button{
-	background:#ecc731;
+	background:var(--primary-color);
 	height:40px;
 	width:40px;
 	position:relative;
@@ -2201,7 +2205,7 @@ header .btn-right .btn:hover i {
 	margin: 0 auto;
 }
 .donation-pop h6 {
-	background: #ecc731;
+	background: var(--primary-color);
 	text-transform: uppercase;
 	display: inline-block;
 	width: 100%;
@@ -2265,12 +2269,12 @@ header .btn-right .btn:hover i {
 	text-transform: uppercase;
 }
 .donation-pop .dona-amount li:hover a {
-	background: #ecc731;
-	border-color: #ecc731;
+	background: var(--primary-color);
+	border-color: var(--primary-color);
 }
 .donation-pop .dona-amount li.active a {
-	background: #ecc731;
-	border-color: #ecc731;
+	background: var(--primary-color);
+	border-color: var(--primary-color);
 }
 .donation-pop .per-info {
 	margin-top: 20px;
@@ -2495,7 +2499,7 @@ header .btn-right .btn:hover i {
 	display: inline-block;
 	background: #fff;
 	height: 40px;
-	border:2px solid #ecc731;
+	border:2px solid var(--primary-color);
 	width: 40px;
 	color: #333333;
 	text-align: center;
@@ -2745,7 +2749,7 @@ header .btn-right .btn:hover i {
 	margin: 0px;
 }
 .proud h2 i {
-	color: #ecc730;
+	color: var(--primary-color);
 }
 /*=======================================================
 			EVENT PAGES
@@ -2799,7 +2803,7 @@ header .btn-right .btn:hover i {
 	font-family: 'FontAwesome';
 	position: relative;
 	left: -10px;
-	color: #ecc731;
+	color: var(--primary-color);
 	  float: left;
 }
 .search {
@@ -3032,7 +3036,7 @@ footer .subcribe button {
 	line-height: 40px;
 	font-size: 14px;
 	color: #000;
-	background: #ecc731;
+	background: var(--primary-color);
 	border: none;
 	float: right;
 	margin-top: -40px;
@@ -3057,7 +3061,7 @@ footer .links li a:hover {
 footer .tweet {
 }
 footer .tweet a {
-	color: #ecc731;
+	color: var(--primary-color);
 	display: inline-block;
 	width: 100%;
 }
